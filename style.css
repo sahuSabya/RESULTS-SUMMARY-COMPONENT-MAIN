@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
 
+body{
+    margin: -8px 0;
+}
+
 /* Desktop */
 
 .flex-container {
@@ -115,7 +119,7 @@
     font-size: 18px;
     font-weight: bold;
     border-radius: 12px;
-    margin: 16px 33px;
+    margin: 16px auto;
     position: relative;
 }
 
@@ -148,7 +152,7 @@
     font-size: 18px;
     font-weight: bold;
     border-radius: 30px;
-    margin: auto;
+    margin: 10px auto;
     background-color: hsl(224, 30%, 27%);
     color: white;
     text-align: center;
@@ -162,7 +166,7 @@
 .button {
     position: absolute;
     top: 16px;
-    right: 96px;
+    right: 100px;
 }
 
 .marks {
@@ -191,7 +195,7 @@ svg {
 /* Mobiles */
 @media (max-width:375px) {
 
-    body{
+    body {
         margin: -8px 0;
     }
 
@@ -214,6 +218,10 @@ svg {
         /* top: 82px;*/
     }
 
+    #comment {
+        width: 77%;
+    }
+
     .summary {
         background-color: white;
         /* box-shadow: 2px 2px 8px gainsboro; */
@@ -226,5 +234,39 @@ svg {
         z-index: 0;
     }
 
-    
+    .continue-button {
+        height: 57px;
+        width: 72.675vw;
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 30px;
+        margin: 20px auto;
+        background-color: hsl(224, 30%, 27%);
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .section {
+        height: 57px;
+        width: 72.675vw;
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 12px;
+        margin: 16px auto;
+        position: relative;
+    }
+
+    .button {
+        position: absolute;
+        top: 16px;
+        right: 30vw;
+    }
+
+    .attribution{
+        display: none;
+    }
+
 }
