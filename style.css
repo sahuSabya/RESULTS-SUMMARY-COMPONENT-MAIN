@@ -2,14 +2,20 @@
 
 
 body {
-    margin: -8px 0;
+    /* margin: -8px 0; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 /* Desktop */
 
 .flex-container {
     display: flex;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     flex-flow: row nowrap;
     justify-content: center;
     /* background-color: white; */
@@ -193,10 +199,11 @@ svg {
 
 
 /* Mobiles */
-@media (max-width:375px) {
+@media (max-width:720px) {
 
     body {
         margin: -8px 0;
+        display: inherit;
     }
 
     .flex-container {
