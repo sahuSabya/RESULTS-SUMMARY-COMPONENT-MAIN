@@ -8,7 +8,7 @@
     margin-top: 80px;
     flex-flow: row nowrap;
     justify-content: center;
-    background-color: white;
+    /* background-color: white; */
 }
 
 /* First Box - Result */
@@ -189,4 +189,42 @@ svg {
 
 
 /* Mobiles */
-@media (max-width:375px) {}
+@media (max-width:375px) {
+
+    body{
+        margin: -8px 0;
+    }
+
+    .flex-container {
+        display: flex;
+        margin-top: 8px;
+        flex-flow: column nowrap;
+        justify-content: center;
+        /* background-color: white;*/
+    }
+
+    .Result {
+        background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 0 0 30px 30px;
+        height: 520px;
+        width: 100vw;
+        position: relative;
+        z-index: 1;
+        /* left: 350px; */
+        /* top: 82px;*/
+    }
+
+    .summary {
+        background-color: white;
+        /* box-shadow: 2px 2px 8px gainsboro; */
+        border-radius: 0;
+        height: 520px;
+        width: 100vw;
+        position: relative;
+        margin-top: -30px;
+        left: -30px;
+        z-index: 0;
+    }
+
+    
+}
